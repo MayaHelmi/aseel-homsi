@@ -1,0 +1,69 @@
+:root {
+  /* Easing */
+  --ease-draw: cubic-bezier(0.6, 0.05, 0.3, 1);
+  --ease-strong: cubic-bezier(0.7, 0, 0.2, 1);
+  --ease-soft: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --ease-spring: cubic-bezier(0.2, 0.9, 0.2, 1.15);
+  --ease-swap-out: cubic-bezier(0.6, 0, 0.4, 1);
+
+  /* 12 · Intro */
+  --motion-intro-draw: 1400ms;
+  --motion-intro-fill: 500ms;
+  --motion-intro-name: 600ms;
+  --motion-intro-open: 900ms;
+  --intro-letter-size: 340px;
+  --intro-dash: 900;
+  --intro-zoom: 14;
+  --intro-failsafe: 4500ms;
+
+  /* 03 · Arches */
+  --motion-arch: 1100ms;
+  --motion-arch-stagger: 150ms;
+  --arch-closed: inset(92% 46% 0 46% round var(--radius-arch));
+  --arch-open: inset(0 0 0 0 round var(--radius-arch));
+  --arch-rise: 2.5rem;
+
+  /* 01 · Calligraphy write */
+  --motion-write: 2800ms;
+  --motion-write-delay: 300ms;
+  --motion-write-line: 900ms;
+  --motion-write-fill: 1000ms;
+  --write-dash: 1600;
+  --write-stroke: 1.4;
+  --write-font-size: 150px;
+  --write-line-height: 1.1;
+
+  /* 02 · Sketch to photo */
+  --motion-morph: 2200ms;
+  --motion-morph-delay: 300ms;
+  --morph-line-width: 2px;
+
+
+  /* 06 · Words rise */
+  --motion-rise: 1000ms;
+  --motion-rise-stagger: 90ms;
+  --rise-blur: 10px;
+  --rise-bleed: 0.4em;
+
+  /* 07 · Fan */
+  --motion-fan: 700ms;
+  --fan-spread: 38.2%;  /* 1/φ² of each sketch's width */
+  --fan-rest-rotate: 3deg;
+  --fan-rotate: 10deg;
+  --fan-lift: 1rem;
+  --fan-scale: 1.08;
+
+
+
+  /* Hover (desktop) */
+  --motion-hover: 300ms;
+  --hover-lift: 0.382rem;   /* φ^-2 */
+  --hover-line: 2px;
+
+  /* 11 · Language switch */
+  --motion-lang-out: 380ms;
+  --motion-lang-in: 520ms;
+  --motion-lang-stagger: 30ms;
+  --lang-shift: 60;
+  --lang-blur: 6px;
+}

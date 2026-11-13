@@ -1,0 +1,14 @@
+:root {
+  --radius-pill: 999px;
+  --radius-arch: 999px 999px 0 0;
+  --border-width: 1px;
+
+  --icon-bar-width: 1.375rem;
+  --icon-bar-height: 2px;
+  --icon-bar-gap: 0.4375rem;
+  --icon-social: 1.618rem;   /* φ */
+
+  --duration-fast: 200ms;
+  --duration-slow: 600ms;
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+}

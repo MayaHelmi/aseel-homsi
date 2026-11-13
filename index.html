@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>أسيل الحمصي — مصممة أزياء</title>
+  <meta name="description" content="أسيل الحمصي، مصممة أزياء أردنية متخصصة في الأزياء الراقية والإكسسوارات المستوحاة من الخط العربي والتراث.">
+  <script>
+    (function () {
+      var root = document.documentElement;
+      root.classList.add('js');
+      try {
+        if (!sessionStorage.getItem('aseel-intro') && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+          root.classList.add('has-intro');
+        }
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Amiri:wght@400;700&family=Marcellus&family=Tajawal:wght@400&display=swap">
+  <link rel="stylesheet" href="styles/tokens/index.css">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <div class="intro" id="intro" aria-hidden="true">
+    <svg viewBox="0 0 300 400"><text x="150" y="300" text-anchor="middle">أ</text></svg>
+    <p class="intro__name">ASEEL HOMSI</p>
+  </div>
+
+  <a class="skip-link" href="#main" data-i18n="skip">انتقل إلى المحتوى</a>
+
+  <header class="site-header">
+    <nav class="nav" data-i18n-attr="aria-label:nav.label" aria-label="القائمة الرئيسية">
+      <a class="brand" href="#top" data-i18n-attr="aria-label:brand.name" aria-label="أسيل الحمصي">
+        <span class="brand__logo t-display" lang="ar" dir="rtl" aria-hidden="true">أسيل الحمصي</span>
+      </a>
+      <div class="nav__links" id="nav-links">
+        <a href="#collections" data-i18n="nav.collections">المجموعات</a>
+        <a href="#accessories" data-i18n="nav.accessories">الإكسسوارات</a>
+        <a href="#about" data-i18n="nav.about">عن المصممة</a>
+        <a href="#contact" data-i18n="nav.contact">تواصل</a>
+      </div>
+      <div class="nav__tools">
+        <div class="lang-switch" role="group" data-i18n-attr="aria-label:lang.label" aria-label="اللغة">
+          <button type="button" class="lang-switch__btn" data-lang="ar" lang="ar" aria-pressed="true">ع</button>
+          <button type="button" class="lang-switch__btn" data-lang="en" lang="en" aria-pressed="false">EN</button>
+        </div>
+        <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="nav-links">
+          <span class="menu-toggle__bars" aria-hidden="true"></span>
+          <span class="menu-toggle__label" data-i18n="nav.menu">القائمة</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="top" class="section hero">
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <h1 class="hero__title t-display" data-i18n="hero.title" data-headline>حين يصبح<br>الحرفُ ثوبًا</h1>
+          <p class="hero__alt t-alt" data-i18n-alt="hero.titlePlain" lang="en" dir="ltr">When the letter becomes couture</p>
+          <p class="hero__intro t-serif" data-i18n="hero.intro">أزياء راقية تستلهم الخط العربي والتراث والعمارة الحديثة، بحرفية عالية وأناقة خالدة.</p>
+          <a class="button" href="#collections" data-i18n="hero.cta">اكتشفي المجموعات</a>
+        </div>
+        <div class="hero__arches">
+          <div class="arch" style="--i: 0">
+            <img src="assets/images/photos/cal-shoot-2.webp" alt="فستان الخط العربي في جبل القلعة" data-i18n-attr="alt:img.shoot2">
+          </div>
+          <div class="arch arch--center" style="--i: 1">
+            <img src="assets/images/photos/cal-shoot-1.webp" alt="فستان أبيض بخط عربي ذهبي في جبل القلعة" data-i18n-attr="alt:img.shoot1">
+          </div>
+          <div class="arch" style="--i: 2">
+            <img src="assets/images/photos/cal-shoot-3.webp" alt="تفصيل الخط الذهبي على الكتف" data-i18n-attr="alt:img.shoot3">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="collections" class="section section--alt">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title t-display rise" data-i18n="collections.title">المجموعات</h2>
+        </div>
+        <div class="collections">
+          <div class="golden-row">
+            <article class="card card--major">
+              <div class="card__media morph" data-morph>
+                <img class="morph__photo" src="assets/images/photos/cal-shoot-1.webp" alt="الفستان النهائي من مجموعة الخط العربي" data-i18n-attr="alt:img.final" loading="lazy">
+                <img class="morph__sketch" src="assets/images/collections/cal-sketch-1.webp" alt="" aria-hidden="true" loading="lazy">
+                <span class="morph__line" aria-hidden="true"></span>
+              </div>
+              <div class="card__footer">
+                <h3 class="card__title t-serif" id="title-calligraphy" data-i18n="col.calligraphy">الخط العربي والعمارة الحديثة</h3>
+                <button type="button" class="link-button" data-open="calligraphy" aria-describedby="title-calligraphy" data-i18n="col.view">عرض المجموعة</button>
+              </div>
+            </article>
+            <article class="card card--minor">
+              <div class="card__media fan" data-fan>
+                <img src="assets/images/collections/her-sketch-1.webp" alt="" loading="lazy">
+                <img src="assets/images/collections/her-sketch-2.webp" alt="" loading="lazy">
+                <img src="assets/images/collections/her-sketch-3.webp" alt="" loading="lazy">
+              </div>
+              <div class="card__footer">
+                <h3 class="card__title t-serif" id="title-heritage" data-i18n="col.heritage">خيوط التراث</h3>
+                <button type="button" class="link-button" data-open="heritage" aria-describedby="title-heritage" data-i18n="col.view">عرض المجموعة</button>
+              </div>
+            </article>
+          </div>
+          <div class="golden-row golden-row--flip">
+            <article class="card card--minor">
+              <div class="card__media fan" data-fan>
+                <img src="assets/images/collections/stel-sketch-1.webp" alt="" loading="lazy">
+                <img src="assets/images/collections/stel-sketch-2.webp" alt="" loading="lazy">
+                <img src="assets/images/collections/stel-sketch-3.webp" alt="" loading="lazy">
+              </div>
+              <div class="card__footer">
+                <h3 class="card__title t-serif" id="title-stellar" data-i18n="col.stellar">ستيلار</h3>
+                <button type="button" class="link-button" data-open="stellar" aria-describedby="title-stellar" data-i18n="col.view">عرض المجموعة</button>
+              </div>
+            </article>
+            <article class="card card--major">
+              <div class="card__media fan" data-fan>
+                <img src="assets/images/ready-to-wear/look-01.webp" alt="" loading="lazy">
+                <img src="assets/images/ready-to-wear/look-03.webp" alt="" loading="lazy">
+                <img src="assets/images/ready-to-wear/look-02.webp" alt="" loading="lazy">
+              </div>
+              <div class="card__footer">
+                <h3 class="card__title t-serif" id="title-readyToWear" data-i18n="col.rtw">الأزياء الجاهزة</h3>
+                <button type="button" class="link-button" data-open="readyToWear" aria-describedby="title-readyToWear" data-i18n="col.view">عرض المجموعة</button>
+              </div>
+            </article>
+          </div>
+          <div class="golden-row">
+            <article class="card card--major">
+              <div class="card__media">
+                <img class="card__photo card__photo--whole" src="assets/images/unisex/look-02.webp" alt="عائلة ترتدي إطلالات رياضية بنقوش الخط العربي" data-i18n-attr="alt:img.unisex" loading="lazy">
+              </div>
+              <div class="card__footer">
+                <h3 class="card__title t-serif" id="title-unisex" data-i18n="col.unisex">مجموعة رياضية للجنسين</h3>
+                <button type="button" class="link-button" data-open="unisex" aria-describedby="title-unisex" data-i18n="col.view">عرض المجموعة</button>
+              </div>
+            </article>
+            <article class="card card--minor">
+              <div class="card__media">
+                <img class="card__photo" src="assets/images/accessories/acc-necklace.webp" alt="قلادة ذهبية منقوشة بالخط العربي" data-i18n-attr="alt:img.necklace" loading="lazy">
+              </div>
+              <div class="card__footer">
+                <h3 class="card__title t-serif" id="title-gioiello" data-i18n="col.gioiello">جويلو</h3>
+                <button type="button" class="link-button" data-open="gioiello" aria-describedby="title-gioiello" data-i18n="col.view">عرض المجموعة</button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="accessories" class="section">
+      <div class="container">
+        <div class="section__head section__head--split">
+          <h2 class="section__title t-display rise" data-i18n="accessories.title">الإكسسوارات</h2>
+          <p class="accessories__intro t-serif" data-i18n="accessories.intro">حقائب ومجوهرات منقوشة بالحروف العربية، صُممت لتكمل كل إطلالة.</p>
+        </div>
+        <div class="grid-4" data-open-area="gioiello">
+          <img class="product" src="assets/images/accessories/acc-rtw-5.webp" alt="حقيبة يد بيضاء بقفل ذهبي منقوش" data-i18n-attr="alt:img.rtwBag" loading="lazy">
+          <img class="product" src="assets/images/accessories/acc-unisex-4.webp" alt="حقيبة كتف بنقوش الحروف العربية" data-i18n-attr="alt:img.crossbody" loading="lazy">
+          <img class="product" src="assets/images/accessories/acc-unisex-7.webp" alt="قبعة كحلية مطرزة بالحروف العربية" data-i18n-attr="alt:img.cap" loading="lazy">
+          <img class="product" src="assets/images/accessories/acc-unisex-5.webp" alt="نظارة شمسية بإطار منقوش" data-i18n-attr="alt:img.sunglasses" loading="lazy">
+        </div>
+        <div class="accessories__more">
+          <button type="button" class="link-button" data-open="gioiello" data-i18n="acc.viewAll">عرض كل الإكسسوارات</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section section--secondary">
+      <div class="container container--narrow grid-2 about">
+        <img class="about__photo" id="about-photo" src="assets/images/photos/portrait.webp" alt="صورة أسيل الحمصي" data-i18n-attr="alt:img.portrait" loading="lazy">
+        <div class="about__text">
+          <h2 class="section__title t-display rise" data-i18n="about.title">عن المصممة</h2>
+          <p class="about__bio t-serif" data-i18n="about.bio">أسيل الحمصي مصممة أزياء أردنية متخصصة في الأزياء الراقية الخالدة، تمزج الحرفية الاستثنائية بالأناقة والابتكار الفني لتحوّل الإلهام إلى قطع حصرية. كما تصمم إكسسوارات خاصة تكمل تصاميمها لتمنح إطلالة متناغمة ومميزة.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="site-footer">
+    <div class="site-footer__inner">
+      <h2 class="site-footer__title t-display rise" data-i18n="contact.title">لنصنع قطعة خالدة</h2>
+      <div class="site-footer__links" dir="ltr">
+        <a href="mailto:aseelhomsi76@gmail.com"><img class="site-footer__icon" src="assets/icons/gmail.svg" alt="" aria-hidden="true"><span>aseelhomsi76@gmail.com</span></a>
+        <a href="https://instagram.com/aseel__arts" target="_blank" rel="noopener"><img class="site-footer__icon" src="assets/icons/instagram.svg" alt="" aria-hidden="true"><span>@aseel__arts</span></a>
+      </div>
+      <p class="site-footer__copy" data-i18n="contact.copy">© 2026 أسيل الحمصي · عمّان، الأردن</p>
+    </div>
+  </footer>
+
+  <dialog class="gallery" id="gallery" aria-labelledby="gallery-title">
+    <div class="gallery__bar">
+      <h2 class="gallery__title t-display" id="gallery-title"></h2>
+      <button type="button" class="gallery__close" data-close data-i18n-attr="aria-label:gallery.close" aria-label="إغلاق">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <div class="gallery__body" id="gallery-body"></div>
+  </dialog>
+
+  <script src="scripts/content.js"></script>
+  <script src="scripts/works.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+</html>

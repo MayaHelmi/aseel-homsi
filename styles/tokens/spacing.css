@@ -1,0 +1,50 @@
+:root {
+  /* Golden ratio spacing: 1rem × φ^n */
+  --space-1: 0.382rem;  /* φ^-2 */
+  --space-2: 0.618rem;  /* φ^-1 */
+  --space-3: 1rem;      /* φ^0 */
+  --space-4: 1.272rem;  /* φ^½ */
+  --space-5: 1.618rem;  /* φ^1 */
+  --space-6: 2.618rem;  /* φ^2 */
+  --space-7: 3.33rem;   /* φ^2.5 */
+  --space-8: 4.236rem;  /* φ^3 */
+  --space-section: clamp(4.236rem, 8vw, 6.854rem); /* φ^3 → φ^4 */
+  --space-gutter: clamp(1rem, 6.18vw, 6.854rem);  /* φ^0 → φ^4 */
+
+  /* Golden ratio proportions: the larger part is φ times the smaller */
+  --golden-major: 1.618fr;
+  --golden-minor: 1fr;
+
+  --container-max: 82.5rem;
+  --container-narrow: 68.75rem;
+  --container-text: 29.034rem;  /* φ^7 */
+
+  --tap-min: 2.75rem;  /* 44px minimum touch target (accessibility), kept off the scale on purpose */
+  --header-offset: 5rem;
+  --header-height: 5.25rem;
+
+  /* Hero fits one screen */
+  --hero-pad-top: clamp(1rem, 4svh, 2.618rem);   /* φ^0 → φ^2 */
+  --hero-pad-bottom: calc(var(--hero-pad-top) * var(--phi));
+  --hero-text-chrome: 12rem;
+  --hero-text-chrome-en: 15rem;
+  --headline-min: 4.236rem;   /* φ^3 */
+  --headline-max: calc(var(--text-display-max) * 2 * var(--write-line-height));
+  --arch-min: 11.09rem;       /* φ^5 */
+  --hero-text-chrome-sm: 24rem;
+  --headline-min-sm: 4.236rem;  /* φ^3 */
+  --headline-max-sm: 6.854rem;  /* φ^4 */
+  --headline-share-sm: 0.2;
+  --arch-min-sm: 6.854rem;      /* φ^4 */
+  --arch-min-short: 4.236rem;   /* φ^3 */
+  --hero-text-chrome-short: 21rem;
+
+  --image-hero: clamp(22.81rem, 48vw, 47.94rem);      /* φ^6.5 → φ^8 · capped by the screen height */
+  --image-hero-sm: clamp(11.09rem, 110vw, 29.034rem); /* φ^5 → φ^7 */
+  --card-major-min: 17.944rem;  /* φ^6 */
+  --card-swipe: 80%;            /* phone: card width in the swipe row, the next one peeks in */
+  --tile-tall: 11.09rem;        /* φ^5 */
+  --tile-wide: 17.944rem;       /* φ^6 */
+  --image-portrait: clamp(22.81rem, 34vw, 29.034rem);  /* φ^6.5 → φ^7 */
+  --image-portrait-sm: clamp(22.81rem, 110vw, 29.034rem);
+}

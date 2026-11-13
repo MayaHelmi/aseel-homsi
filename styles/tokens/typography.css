@@ -1,0 +1,38 @@
+:root {
+  /* Families */
+  --font-calligraphy: 'Aref Ruqaa', 'Amiri', serif;
+  --font-serif-ar: 'Amiri', serif;
+  --font-sans-ar: 'Tajawal', system-ui, sans-serif;
+  --font-serif-en: 'Marcellus', Georgia, serif;
+
+  /* Golden ratio: every size below is 1rem × φ^n, with φ = 1.618 */
+  --phi: 1.618;
+
+  /* Sizes: seven steps, each about √φ apart */
+  --text-sm: 0.886rem;   /* φ^-¼ · small print, labels */
+  --text-base: 1rem;     /* φ^0  · buttons */
+  --text-lg: 1.272rem;   /* φ^½  · body, nav, links */
+  --text-2xl: 1.618rem;  /* φ^1  · lead paragraph, sub-headings */
+  --text-3xl: clamp(2.058rem, 5vw, 2.618rem);      /* φ^1.5 → φ^2 */
+  --text-4xl: clamp(2.618rem, 6vw, 4.236rem);      /* φ^2 → φ^3 */
+  --text-display-max: 6.854rem;                    /* φ^4 */
+  --text-display: clamp(4.236rem, 9vw, var(--text-display-max)); /* φ^3 → φ^4 */
+  --text-footer: clamp(3.33rem, 7vw, 5.388rem);    /* φ^2.5 → φ^3.5 */
+
+  /* Line heights */
+  --leading-tight: 1.128;    /* φ^¼ */
+  --leading-normal: 1.618;   /* φ */
+  --leading-loose: 1.618;    /* φ */
+  --leading-relaxed: 1.825;  /* φ^1¼ */
+
+  /* Letter spacing */
+  --tracking-tight: -0.01em;
+  --tracking-normal: 0.04em;
+  --tracking-wide: 0.08em;
+  --tracking-wider: 0.3em;
+
+  /* Weights */
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-bold: 700;
+}

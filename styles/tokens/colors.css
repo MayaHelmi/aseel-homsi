@@ -1,0 +1,56 @@
+:root {
+  /* Base palette */
+  --color-sand-100: #F6F0E5;
+  --color-sand-200: #EDE3D3;
+  --color-sand-300: #E2C68C;
+  --color-gold-400: #C9A86A;
+  --color-brown-500: #6B5544;
+  --color-brown-700: #4A2E1F;
+  --color-brown-900: #2E1C12;
+  --color-cream-50: #F3EADB;
+  --color-taupe-300: #C7B59C;
+
+  /* 60-30-10 colour rule
+     60 dominant  = sand  (page backgrounds, footer)
+     30 secondary = brown (header, About section, text)
+     10 accent    = gold  (buttons, language switch, footer line, small details) */
+
+  /* 60 · Dominant */
+  --color-bg: var(--color-sand-200);
+  --color-bg-alt: var(--color-sand-100);
+  --color-surface: var(--color-sand-200);
+
+  /* 30 · Secondary */
+  --color-secondary: var(--color-brown-700);
+  --color-on-secondary: var(--color-cream-50);
+  --color-on-secondary-muted: var(--color-taupe-300);
+  --color-text: var(--color-brown-700);
+  --color-text-muted: var(--color-brown-500);
+  --color-text-strong: var(--color-brown-900);
+
+  /* 10 · Accent */
+  --color-accent: var(--color-gold-400);
+  --color-accent-soft: var(--color-sand-300);
+  --color-on-accent: var(--color-brown-900);
+  --color-on-accent-muted: var(--color-brown-700);
+
+  /* Roles built from the three above */
+  --color-inverse-bg: var(--color-secondary);
+  --color-inverse-text: var(--color-on-secondary);
+  --color-inverse-muted: var(--color-on-secondary-muted);
+  --color-inverse-link: var(--color-accent-soft);
+  --color-footer-bg: var(--color-bg-alt);
+  --color-on-footer: var(--color-text);
+  --color-on-footer-muted: var(--color-text-muted);
+  --color-footer-title: var(--color-text-strong);
+  --color-footer-line: var(--color-accent);
+  --color-highlight: var(--color-accent);
+  --color-on-highlight: var(--color-on-accent);
+  --color-link-hover: var(--color-text-strong);
+  --color-focus: var(--color-text-strong);
+  --color-gold-halo: rgba(226, 198, 140, 0.8);
+  --color-shadow: rgba(74, 46, 31, 0.35);
+  --color-backdrop: rgba(46, 28, 18, 0.72);
+  --color-hover-tint-dark: rgba(243, 234, 219, 0.14);
+  --shadow-hover: 0 1rem 2.618rem -1rem rgba(46, 28, 18, 0.45);
+}
