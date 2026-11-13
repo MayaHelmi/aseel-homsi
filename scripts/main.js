@@ -13,7 +13,12 @@
   const playsIntro = root.classList.contains('has-intro') && !reduceMotion && intro;
 
   // main.js is running: switch off the CSS failsafe that hides the intro if this script never loads
+  const hero = document.querySelector('.hero');
   if (playsIntro) intro.classList.add('is-running');
+  // The hero holds its first frame until it plays, so it never shows finished and then replays
+  if (!reduceMotion) hero.classList.add('hero-wait');
+  // Hero animations start here: as the intro opens, or straight away on later visits
+  const playHero = () => { hero.classList.remove('hero-wait'); hero.classList.add('hero-play'); };
 
   // Design tokens (read from CSS so nothing is duplicated here)
   const css = getComputedStyle(root);
@@ -190,6 +195,7 @@
     await name.animate([{ opacity: 0 }, { opacity: 1 }],
       { duration: num('--motion-intro-name'), fill: 'forwards' }).finished;
     name.animate([{ opacity: 1 }, { opacity: 0 }], { duration: open / 3, fill: 'forwards' });
+    playHero(); // the hero starts animating as the intro opens over it
     svg.animate([{ transform: 'scale(1)' }, { transform: `scale(${num('--intro-zoom')})` }],
       { duration: open, easing: token('--ease-strong'), fill: 'forwards' });
     await intro.animate([{ clipPath: 'circle(150% at 50% 50%)' }, { clipPath: 'circle(0% at 50% 50%)' }],
@@ -405,6 +411,19 @@
     } else if (intro) {
       closeIntro();
     }
-    document.querySelector('.hero').classList.add('hero-play');
+    playHero();
+    openGift();
   });
+
+  /* ---------- Birthday note: only from the gift link (?gift) ---------- */
+  function openGift() {
+    const gift = document.getElementById('gift');
+    if (!gift || !new URLSearchParams(location.search).has('gift')) return;
+    gift.showModal();
+    root.classList.add('has-dialog');
+    const done = () => { if (gift.open) gift.close(); };
+    gift.querySelector('[data-gift-close]').addEventListener('click', done);
+    gift.addEventListener('click', (e) => { if (e.target === gift) done(); });
+    gift.addEventListener('close', () => root.classList.remove('has-dialog'), { once: true });
+  }
 })();

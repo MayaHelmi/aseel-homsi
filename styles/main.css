@@ -340,6 +340,15 @@ h1, h2, h3, p, figure { margin: 0; }
 @keyframes write-draw { to { stroke-dashoffset: 0; } }
 @keyframes write-fill { to { fill: var(--color-text); } }
 
+/* While the intro covers the page, the hero waits at its first frame,
+   so the reveal never shows it finished and then replays it */
+.hero-wait .arch { clip-path: var(--arch-closed); transform: translateY(var(--arch-rise)); }
+.hero-wait .hero__title svg.is-writing text {
+  fill: transparent;
+  stroke-dasharray: var(--write-dash);
+  stroke-dashoffset: var(--write-dash);
+}
+
 /* ---------- 03 · Arches open ---------- */
 .hero-play .arch {
   animation: arch-open var(--motion-arch) var(--ease-strong) both;
@@ -533,6 +542,58 @@ h1, h2, h3, p, figure { margin: 0; }
   overscroll-behavior: contain;
 }
 .gallery::backdrop { background: var(--color-backdrop); }
+
+/* ---------- Birthday note (gift link only) ---------- */
+.gift {
+  width: min(100% - 2 * var(--space-gutter), var(--container-text));
+  max-width: none;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  overflow: visible;
+}
+.gift::backdrop { background: var(--color-backdrop); }
+.gift[open] .gift__card { animation: gift-in var(--motion-gift) var(--ease-soft) both; }
+.gift__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-8) var(--space-6) var(--space-6);
+  border-top: calc(var(--border-width) * 2) solid var(--color-accent);
+  border-radius: var(--radius-arch);
+  background: var(--color-bg-alt);
+  color: var(--color-text);
+  text-align: center;
+  box-shadow: var(--shadow-hover);
+}
+.gift__mark {
+  font-size: var(--text-4xl);
+  line-height: 1;
+  color: var(--color-accent);
+}
+.gift__title {
+  font-size: var(--text-3xl);
+  line-height: var(--leading-tight);
+  color: var(--color-text-strong);
+}
+.gift__text { font-size: var(--text-lg); line-height: var(--leading-normal); }
+.gift__note { font-size: var(--text-base); color: var(--color-text-muted); }
+.gift__sign { font-size: var(--text-lg); color: var(--color-text-strong); }
+.gift__open {
+  align-self: center;
+  margin-top: var(--space-3);
+  border: 0;
+  font: inherit;
+  cursor: pointer;
+}
+.gift__card:focus { outline: none; }
+@keyframes gift-in {
+  from { opacity: 0; transform: translateY(var(--gift-rise)) scale(0.96); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .gift[open] .gift__card { animation: none; }
+}
 .gallery__bar {
   position: sticky;
   top: 0;

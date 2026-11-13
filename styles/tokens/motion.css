@@ -60,6 +60,10 @@
   --hover-lift: 0.382rem;   /* φ^-2 */
   --hover-line: 2px;
 
+  /* Birthday note */
+  --motion-gift: 900ms;
+  --gift-rise: 2.618rem;
+
   /* 11 · Language switch */
   --motion-lang-out: 380ms;
   --motion-lang-in: 520ms;

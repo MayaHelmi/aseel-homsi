@@ -5,6 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>أسيل الحمصي — مصممة أزياء</title>
   <meta name="description" content="أسيل الحمصي، مصممة أزياء أردنية متخصصة في الأزياء الراقية والإكسسوارات المستوحاة من الخط العربي والتراث.">
+  <!-- Link preview (WhatsApp, Instagram, iMessage). Birthday version for now: swap the image and text before the site goes public. -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mayahelmi.github.io/aseel-homsi/">
+  <meta property="og:title" content="كل سنة وإنتِ بألف خير يا أسيل 🤍">
+  <meta property="og:description" content="من الأردن لجدة… هديتي إلك بعيد ميلادك الـ٢٣">
+  <meta property="og:image" content="https://mayahelmi.github.io/aseel-homsi/assets/images/meta/og-birthday.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="أسيل ومايا">
+  <meta property="og:locale" content="ar_JO">
+  <meta name="twitter:card" content="summary_large_image">
   <script>
     (function () {
       var root = document.documentElement;
@@ -194,6 +205,18 @@
       <p class="site-footer__copy" data-i18n="contact.copy">© 2026 أسيل الحمصي · عمّان، الأردن</p>
     </div>
   </footer>
+
+  <!-- Birthday note: opens only from the gift link (index.html?gift) -->
+  <dialog class="gift" id="gift" aria-labelledby="gift-title">
+    <div class="gift__card" tabindex="-1" autofocus>
+      <span class="gift__mark t-display" data-i18n="gift.age">٢٣</span>
+      <h2 class="gift__title t-display" id="gift-title" data-i18n="gift.title">كل سنة وإنتِ بألف خير يا أسيل</h2>
+      <p class="gift__text" data-i18n="gift.text">من الأردن لجدة… هاد الموقع هديتي إلك بعيد ميلادك الـ٢٣. بيت لكل تصاميمك، ولكل إشي بتعمليه بإيديكِ.</p>
+      <p class="gift__note" data-i18n="gift.note">لسّا عم بشتغل عليه، فهاي نسخة أولى ورح تكبر معك. وأي إشي بدك تغيريه، احكيلي.</p>
+      <p class="gift__sign t-serif" data-i18n="gift.sign">— مايا 🤍</p>
+      <button type="button" class="button gift__open" data-gift-close data-i18n="gift.open">افتحي هديتك</button>
+    </div>
+  </dialog>
 
   <dialog class="gallery" id="gallery" aria-labelledby="gallery-title">
     <div class="gallery__bar">
