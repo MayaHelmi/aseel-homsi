@@ -15,12 +15,8 @@
         { label: { ar: 'التصوير النهائي', en: 'Final shoot' }, fit: 'photo',
           items: ['photos/cal-shoot-1', 'photos/cal-shoot-2', 'photos/cal-shoot-3'],
           focus: { 'photos/cal-shoot-3': 'top' } },
-        { label: { ar: 'إطلالات الأزياء الراقية', en: 'Haute couture looks' }, fit: 'tall',
-          items: range(15, (i) => `couture/look-${pad(i)}`) },
         { label: { ar: 'الرسومات', en: 'Illustrations' }, fit: 'tall',
           items: range(6, (i) => `collections/cal-sketch-${i}`) },
-        { label: { ar: 'الرسومات التقنية', en: 'Technical drawings' }, fit: 'tall',
-          items: range(15, (i) => `couture/flat-${pad(i)}`) },
         { label: { ar: 'لوحة الإلهام ومراحل العمل', en: 'Mood board & process' }, fit: 'wide',
           items: ['process/cal-moodboard', 'process/cal-process'] }
       ]
